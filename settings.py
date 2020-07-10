@@ -38,12 +38,6 @@ REAL_WORLD_CURRENCY_CODE = 'USD'
 USE_POINTS = False
 
 ROOMS = [
-    dict(
-        name='WLU',
-        display_name='WLU Experiment',
-        participant_label_file='_rooms/WLUexperiment.txt',
-    ),
-
     dict(name='WLU_1',
          display_name='WLU Experiment 1',
          )
