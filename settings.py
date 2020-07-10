@@ -22,7 +22,6 @@ SESSION_CONFIGS = [
         name='trust_session',
         num_demo_participants=2,
         app_sequence=['trust', 'mpl', 'survey'],
-        color='red'
     ),
 
 ]
