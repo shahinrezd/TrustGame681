@@ -1,2 +1,1 @@
-# TrustGame681
-Variation of trust game 
+# trust-game
