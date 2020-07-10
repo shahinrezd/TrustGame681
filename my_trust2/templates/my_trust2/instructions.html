@@ -1,0 +1,47 @@
+{% load otree %}
+
+<div class="card bg-light m-3">
+<div class="card-body">
+    <h3>
+        Introductions / Task 1
+    </h3>
+
+   <p>
+
+        You have
+        been randomly and anonymously paired with another participant.
+        One of you will be selected at random to be participant A;
+        the other will be participant B.
+        You will learn whether you are participant A or B prior to making any
+        decision.
+    </p>
+    <p>
+        To start, participant A receives {{ Constants.endowment }};
+        participant B receives
+        nothing.
+        Participant A can send some or all of
+        their endowment to participant B.
+        Before B receives this amount, it will be multiplied
+        by {{ Constants.multiplier }}. Once informed of the amount sent to them,
+        B can decide to offer some, or all of it to A.
+        participant A must then accept or deny B's offer.
+        you will perform this task for 5 rounds, and will be paired up randomly each time. If A accepts, A receives
+        whatever B sent them, along with the remainder of whatever was not sent (if any). If A accepts, B receives
+        whatever was sent to them minus what they sent to A.
+        If the offer is rejected, A keeps the remainder, and B receives 0.
+    </p>
+    <p>
+        Suppose participant A sends 40 of their 100 points to B, leaving 60 as a remainder.
+        This amount will then be tripled by the computer and B will receive 120 points.
+        Suppose B offers 50 points back to A. If A accepts the offer, B will end with 70 points, and A will end with
+        110 points. If A rejects this offer, B will end with 0 points, while A will keep their remainder of 60 points.
+    You will be asked to complete this task 5 times. You will be randomly paired each time. There is no
+        guarantee that you will be paired with the same person again.
+    </p>
+    <P>
+        After the experiment is finished, you will asked to complete a short questionnaire.
+         As a thank you for completing this experiment
+    you will be put in a draw to randomly win a prize.
+    </P>
+</div>
+</div>

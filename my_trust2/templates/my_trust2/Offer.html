@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Offer Page
+{% endblock %}
+
+{% block content %}
+<p>
+You are participant B. Participant A has sent you {{ group.sent_amount }}. That amount has been tripled.
+  so You have  {{tripled_amount}}.
+</p>
+{% formfield group.sent_back_amount label=prompt %}
+
+   <P>{% next_button %}</P>
+
+{% endblock %}

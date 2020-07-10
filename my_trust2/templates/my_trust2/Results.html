@@ -1,0 +1,55 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Results
+{% endblock %}
+
+{% block content %}
+{% if player.id_in_group == 2 %}
+    <p>
+    Participant A sent you {{ group.sent_amount }}. You received {{ tripled_amount }}
+
+    you offered {{ group.sent_back_amount }} to A.
+
+
+    they
+        {% if group.offer_accepted == True %} accepted the offer.
+            therefore your payoff is <strong>{{ player.payoff }}</strong>
+            {% else %}
+    Rejected the offer.
+{% endif %}
+        therefore your payoff is <strong>{{ player.payoff }}</strong>. </P>
+
+
+    {% else %}
+
+
+
+    <p>
+    you were given {{ Constants.endowment }}
+    You sent B {{ group.sent_amount }}.
+        you were offered   {{ group.sent_back_amount }}. which you
+    {% if group.offer_accepted == True  %} accepted.
+        therefore your payoff is <strong>{{ player.payoff }}</strong>
+        {% else %}
+
+        {% endif %}
+
+        rejected, therefore your payoff is  <strong>{{ player.payoff }}</strong>
+
+
+
+        </P>
+
+{% endif %}
+
+
+
+
+
+
+
+{% next_button %}
+
+{% endblock %}

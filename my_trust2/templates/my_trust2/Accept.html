@@ -1,0 +1,17 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+    Send Back Page
+{% endblock %}
+
+{% block content %}
+<p>
+    Participant B has sent you {{ group.sent_back_amount }}.
+    Do you accept B's Offer?
+</p>
+{% formfield group.offer_accepted %}
+
+    <P>{% next_button %}</P>
+
+{% endblock %}
